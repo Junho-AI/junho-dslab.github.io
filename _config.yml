@@ -4,3 +4,8 @@ description: Study
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
