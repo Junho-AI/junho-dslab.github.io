@@ -48,7 +48,7 @@ layout: default
 
 이것을 **베르누이 분포(_Bernoulli distribution_)**라고 한다. 베르누이 분포는 정규화되어 있으며, 그 평균과 분산이 다음과 같이 주어진다는 것을 쉽게 증명할 수 있다.
 
-<center> ### (식 2.3)		$\mathbb{E}[x] = \mu$ </center>
+### <center>  (식 2.3)		$\mathbb{E}[x] = \mu$ </center>
 ### (식 2.4)		$var[x] = \mu(1-\mu)$
 
 $x$의 관측값 데이터 집합 $\mathcal{D} = \{x_{1},...,x_{N}\}$이 주어졌다고 가정하면, 관측값들이 $p(x\mid\mu)$에서 독립적으로 추출되었다는 가정하에 $\mu$의 함수로써 가능도 함수를 구성할 수 있다.
