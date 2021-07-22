@@ -44,23 +44,25 @@ layout: default
 
 여기서 $0 \leqslant \mu \leqslant 1$이다. 그리고 $p(x = 0\mid\mu) = 1 - \mu$가 된다. 따라서 $x$에 대한 확률 분포를 다음과 같이 적을 수 있다.
 
-### <center>Bern$(x\mid\mu) = \mu^x(1 - \mu)^{1-x}$ (식 2.2)</center>
+### <center>$Bern(x\mid\mu) = \mu^x(1 - \mu)^{1-x}$ (식 2.2)</center>
 
 이것을 **베르누이 분포(_Bernoulli distribution_)**라고 한다. 베르누이 분포는 정규화되어 있으며, 그 평균과 분산이 다음과 같이 주어진다는 것을 쉽게 증명할 수 있다.
 
 ### <center>$\mathbb{E}[x] = \mu$ (식 2.3)</center>
 ### <center>$var[x] = \mu(1-\mu)$ (식 2.4)</center>
 
-#### <center>$E(X) = 1\cdot\mu+0\cdot(1-p) = p$</center>
-#### <center>$Var(X) = E(X-p)^2$</center>
-#### <center>$		 = (0-p)^2 \cdot (1-p) + (1-p)^2 \cdot p$</center>
-#### <center>$		 = p(1-p)$</center>
+증명되는 과정은 다음과 같다.
+
+#### $\mathbb{E}[x] = 1\cdot\mu+0\cdot(1-p) = p$
+##### $var[x] = E(X-p)^2$
+##### $		 = (0-p)^2 \cdot (1-p) + (1-p)^2 \cdot p$
+##### $		 = p(1-p)$
 
 $x$의 관측값 데이터 집합 $\mathcal{D} = \{x_{1},...,x_{N}\}$이 주어졌다고 가정하면, 관측값들이 $p(x\mid\mu)$에서 독립적으로 추출되었다는 가정하에 $\mu$의 함수로써 가능도 함수를 구성할 수 있다.
 
-### (식 2.5)		
+### <center>$p(\mathcal{D}\mid\mu) = \prod_{n=1}^N p(x_{n}\mid\mu) = \prod_{n=1}^N \mu^x_{n}(1-\mu)^{1-x_{n}}$</center>		
 
-
+빈도적 관점에서는 가능도 함수를 최대화하는(또는 이와 동일하게 로그 가능도 함수를 최대화하는) $\mu$를 찾아서 $\mu$의 값을 추정할 수 있다. 베르누이 분포의 경우 로그 가능도 함수는 다음으로 주어진다.
 
 
 
