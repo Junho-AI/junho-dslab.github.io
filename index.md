@@ -40,16 +40,21 @@ layout: default
 
 하나의 이진 확률 변수 $x\in\{0,1\}$을 고려해 본다. 예를 들어 $x$는 동전 던지기의 결괏값을 설명하는 확률 변수이다. $x = 0,1$은 동전의 앞,뒤인 경우로 판단하면 될 듯 하다. 만약 동전이 망가져서 앞면이 나올 확률과 뒷면이 나올 확률이 동일하지 않다고 가정해보자. 이때 $x=1$일 확률은 매개변수 $\mu$를 통해 다음과 같이 표현할 수 있다.
 
-### (식 2.1)		$p(x = 1\mid\mu) = \mu$
+### <center>$p(x = 1\mid\mu) = \mu$	(식 2.1)</center>
 
 여기서 $0 \leqslant \mu \leqslant 1$이다. 그리고 $p(x = 0\mid\mu) = 1 - \mu$가 된다. 따라서 $x$에 대한 확률 분포를 다음과 같이 적을 수 있다.
 
-### (식 2.2)		Bern$(x\mid\mu) = \mu^x(1 - \mu)^{1-x}$
+### <center>Bern$(x\mid\mu) = \mu^x(1 - \mu)^{1-x}$ (식 2.2)</center>
 
 이것을 **베르누이 분포(_Bernoulli distribution_)**라고 한다. 베르누이 분포는 정규화되어 있으며, 그 평균과 분산이 다음과 같이 주어진다는 것을 쉽게 증명할 수 있다.
 
-### <center>  (식 2.3)		$\mathbb{E}[x] = \mu$ </center>
-### (식 2.4)		$var[x] = \mu(1-\mu)$
+### <center>$\mathbb{E}[x] = \mu$ (식 2.3)</center>
+### <center>$var[x] = \mu(1-\mu)$ (식 2.4)</center>
+
+#### <center>$E(X) = 1\cdot\mu+0\cdot(1-p) = p$</center>
+#### <center>$Var(X) = E(X-p)^2$</center>
+#### <center>$		 = (0-p)^2 \cdot (1-p) + (1-p)^2 \cdot p$</center>
+#### <center>$		 = p(1-p)$</center>
 
 $x$의 관측값 데이터 집합 $\mathcal{D} = \{x_{1},...,x_{N}\}$이 주어졌다고 가정하면, 관측값들이 $p(x\mid\mu)$에서 독립적으로 추출되었다는 가정하에 $\mu$의 함수로써 가능도 함수를 구성할 수 있다.
 
