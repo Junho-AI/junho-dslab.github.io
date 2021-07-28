@@ -32,7 +32,4 @@ paginate: 20
 baseurl: /
 url : https://junho-dslab.github.io
 production_url : https://junho-dslab.github.io
-owner:
-	name : Junho Shin
-	email: entus0123@naver.com
 
