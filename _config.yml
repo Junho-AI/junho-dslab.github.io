@@ -1,4 +1,4 @@
-title: "패턴인식과 머신러닝"
+title: "AI Technical Training"
 logo: /assets/img/logo.png
 description: Study
 show_downloads: false
@@ -6,6 +6,33 @@ google_analytics:
 theme: jekyll-theme-minimal
 markdown: kramdown
 highlighter: rouge
-lsi: false
+
+# Travis-CI 설정입니다.
+safe: False
+lsi: False
+
 excerpt_separator: "\n\n"
 incremental: false
+
+navigation: True
+# Navigation bar link를 보여줄건지 여부
+
+disqus: True
+disqus_shortname: xxxxxxxx
+# disqus는 온라인 댓글 시스템. 댓글 기능을 사용하기 위해
+# disqus를 이용할 것인지 여부와 만약 사용하면
+# disqus shortname을 입력 ( disqus username이 아님 )
+
+paginate: 20
+# 작성한 모든 post를 하나의 페이지에 열거할 수 없으니
+# pagination이 필요하고 몇개의 post를 하나의 page에서
+# 보여줄 건지를 설정.
+
+
+baseurl: /
+url : https://junho-dslab.github.io
+production_url : https://junho-dslab.github.io
+owner:
+	name : Junho Shin
+	email: entus0123@naver.com
+
