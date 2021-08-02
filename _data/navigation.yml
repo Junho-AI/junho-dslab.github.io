@@ -5,9 +5,9 @@ main:
   - title: "About"
     url: /about/
   - title: "Categories"
-  	url: /categories/
+  url: /categories/
   - title: "Tage"
-  	url: /tags/
+  url: /tags/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
