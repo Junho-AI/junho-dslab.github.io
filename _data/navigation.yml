@@ -4,6 +4,10 @@ main:
     url: https://junho-dslab.github.io/
   - title: "About"
     url: /about/
+  - title: "Categories"
+  	url: /categories/
+  - title: "Tage"
+  	url: /tags/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
