@@ -1,1 +1,1 @@
-Sitemap: /sitemap.xml
+Sitemap: https://junho-dslab.github.io/sitemap.xml
